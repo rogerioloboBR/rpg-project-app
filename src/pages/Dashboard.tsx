@@ -1,20 +1,14 @@
-// src/pages/Dashboard.tsx
 import React from 'react';
-import Sidebar from '../components/Sidebar';
-import Dashboard from '../components/Dashboard';
-import Statistics from '../components/Statistics';
-import { Container, Grid } from '@mui/material';
+import Header from '../components/Header';
 
-const DashboardPage: React.FC = () => (
-  <Grid container>
-    <Grid item xs={12} sm={3}>
-      <Sidebar />
-    </Grid>
-    <Grid item xs={12} sm={9}>
-      <Dashboard />
-      <Statistics /> {/* Adicione gráficos ou outras seções conforme necessário */}
-    </Grid>
-  </Grid>
+const Dashboard: React.FC = () => (
+  <div>
+    <Header />
+    <main>
+      <h2>Dashboard</h2>
+      <p>Overview of the system.</p>
+    </main>
+  </div>
 );
 
-export default DashboardPage;
+export default Dashboard;

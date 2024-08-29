@@ -1,9 +1,13 @@
-// src/pages/Home.tsx
 import React from 'react';
+import Header from '../components/Header';
 
 const Home: React.FC = () => (
   <div>
-    <h1>Home Page</h1>
+    <Header />
+    <main>
+      <h2>Home Page</h2>
+      <p>Welcome to the RPG management system.</p>
+    </main>
   </div>
 );
 
